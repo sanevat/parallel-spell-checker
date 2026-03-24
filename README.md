@@ -1,6 +1,6 @@
-# Parallel Spell Checking with MPI
+# Parallel Spell Checking with MPI and CUDA
 
-A high-performance spell checking system using parallel computing with MPI. Implements multiple edit distance algorithms and compares two parallelization strategies: **text-split** and **dictionary-split**.
+A high-performance spell checking system using parallel computing with **MPI** and **CUDA**. Implements multiple edit distance algorithms and compares two MPI parallelization strategies: **text-split** and **dictionary-split**.
 
 ## Features
 
@@ -9,9 +9,13 @@ A high-performance spell checking system using parallel computing with MPI. Impl
   - **Damerau-Levenshtein** - Includes transposition as single operation (+7-9% accuracy)
   - **Myers' Bit-Vector** - Bit-parallel algorithm (3-5x faster than Levenshtein)
 
-- **Two Parallelization Strategies:**
+- **MPI Parallelization Strategies:**
   - **Text-Split** - Distributes misspelled words across processes (better efficiency)
   - **Dictionary-Split** - Distributes dictionary candidates across processes
+
+- **CUDA GPU Acceleration:**
+  - Batch processing on GPU
+  - Global memory optimization
 
 - **Multi-language Support:**
   - Macedonian (Cyrillic/UTF-8)
@@ -48,8 +52,8 @@ spell_checking/
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/spell_checking.git
-cd spell_checking
+git clone https://github.com/sanevat/parallel-spell-checker.git
+cd parallel-spell-checker
 
 # Create virtual environment
 python -m venv .venv
@@ -65,6 +69,7 @@ pip install -r requirements.txt
 - Python 3.8+
 - MPI implementation (MS-MPI for Windows, OpenMPI for Linux)
 - mpi4py
+- CUDA Toolkit + Numba (for GPU acceleration)
 
 ## Usage
 
@@ -135,7 +140,7 @@ MIT License
 
 ## Author
 
-[Your Name]
+Teodora Saneva
 
 ## Acknowledgments
 
