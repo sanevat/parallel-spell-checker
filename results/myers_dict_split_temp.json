@@ -1,0 +1,29 @@
+{
+  "num_procs": 8,
+  "results": [
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 4999,
+      "total_time_s": 158.93604920216603,
+      "ms_per_word": 31.793568554144038,
+      "correct": 3963,
+      "accuracy_pct": 79.27585517103421,
+      "avg_candidates": 26321.657331466293,
+      "candidates_per_proc": 3290.2071664332866
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 4999,
+      "total_time_s": 128.54337479983224,
+      "ms_per_word": 25.71381772351115,
+      "correct": 3948,
+      "accuracy_pct": 78.9757951590318,
+      "avg_candidates": 26372.92398479696,
+      "candidates_per_proc": 3296.61549809962
+    }
+  ]
+}

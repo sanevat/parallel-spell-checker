@@ -1,0 +1,67 @@
+{
+  "description": "CUDA Batch benchmark (1000 words)",
+  "device": "NVIDIA GeForce RTX 2050",
+  "batch_size": 64,
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "num_words": 1000,
+      "batch_size": 64,
+      "total_time_s": 0.6728253999754088,
+      "ms_per_word": 0.6728253999754088,
+      "correct": 778,
+      "accuracy_pct": 77.8
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "num_words": 1000,
+      "batch_size": 64,
+      "total_time_s": 0.6482838000083575,
+      "ms_per_word": 0.6482838000083575,
+      "correct": 791,
+      "accuracy_pct": 79.10000000000001
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "num_words": 1000,
+      "batch_size": 64,
+      "total_time_s": 0.3650611000339268,
+      "ms_per_word": 0.3650611000339268,
+      "correct": 854,
+      "accuracy_pct": 85.39999999999999
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "num_words": 1000,
+      "batch_size": 64,
+      "total_time_s": 0.3612351999763632,
+      "ms_per_word": 0.3612351999763632,
+      "correct": 859,
+      "accuracy_pct": 85.9
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "num_words": 1000,
+      "batch_size": 64,
+      "total_time_s": 0.21798589997342788,
+      "ms_per_word": 0.21798589997342788,
+      "correct": 778,
+      "accuracy_pct": 77.8
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "num_words": 1000,
+      "batch_size": 64,
+      "total_time_s": 0.22970809998514596,
+      "ms_per_word": 0.22970809998514596,
+      "correct": 791,
+      "accuracy_pct": 79.10000000000001
+    }
+  ]
+}

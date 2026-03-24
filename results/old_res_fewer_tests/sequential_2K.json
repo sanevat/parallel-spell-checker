@@ -1,0 +1,91 @@
+{
+  "description": "Sequential baseline with 2000 misspelled words, 50K Hunspell dict",
+  "mk_stats": {
+    "total_words": 5714,
+    "typo_words": 2000,
+    "correct_words": 3714,
+    "unique_typos": 2000,
+    "error_types": {
+      "swap": 364,
+      "replace": 609,
+      "delete": 282,
+      "insert": 745
+    }
+  },
+  "en_stats": {
+    "total_words": 5714,
+    "typo_words": 2000,
+    "correct_words": 3714,
+    "unique_typos": 2000,
+    "error_types": {
+      "replace": 610,
+      "delete": 321,
+      "insert": 719,
+      "swap": 350
+    }
+  },
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "misspelled": 2000,
+      "total_time_s": 876.1532932000446,
+      "ms_per_word": 438.0766466000223,
+      "correct": 1579,
+      "accuracy_pct": 78.95,
+      "avg_candidates": 24869.439
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "misspelled": 2000,
+      "total_time_s": 644.3641386000345,
+      "ms_per_word": 322.18206930001725,
+      "correct": 1580,
+      "accuracy_pct": 79.0,
+      "avg_candidates": 25092.465
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "misspelled": 2000,
+      "total_time_s": 957.8768121999983,
+      "ms_per_word": 478.93840609999916,
+      "correct": 1718,
+      "accuracy_pct": 85.9,
+      "avg_candidates": 24869.439
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "misspelled": 2000,
+      "total_time_s": 920.0252061000429,
+      "ms_per_word": 460.0126030500214,
+      "correct": 1705,
+      "accuracy_pct": 85.25,
+      "avg_candidates": 25092.465
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "misspelled": 2000,
+      "total_time_s": 270.8,
+      "ms_per_word": 135.4,
+      "correct": 1579,
+      "accuracy_pct": 79.0,
+      "avg_candidates": 24869.439,
+      "note": "re-run value"
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "misspelled": 2000,
+      "total_time_s": 240.3,
+      "ms_per_word": 120.2,
+      "correct": 1580,
+      "accuracy_pct": 79.0,
+      "avg_candidates": 25092.465,
+      "note": "re-run value"
+    }
+  ]
+}

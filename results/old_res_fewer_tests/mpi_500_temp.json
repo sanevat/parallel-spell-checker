@@ -1,0 +1,77 @@
+{
+  "num_procs": 8,
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 500,
+      "total_time_s": 51.84507400003713,
+      "ms_per_word": 103.69014800007426,
+      "correct": 380,
+      "accuracy_pct": 76.0,
+      "avg_candidates": 25875.686,
+      "avg_candidates_per_proc": 3234.46075
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 500,
+      "total_time_s": 48.31687669998064,
+      "ms_per_word": 96.63375339996128,
+      "correct": 376,
+      "accuracy_pct": 75.2,
+      "avg_candidates": 26695.356,
+      "avg_candidates_per_proc": 3336.9195
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 500,
+      "total_time_s": 73.52280479994442,
+      "ms_per_word": 147.04560959988885,
+      "correct": 420,
+      "accuracy_pct": 84.0,
+      "avg_candidates": 25875.686,
+      "avg_candidates_per_proc": 3234.46075
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 500,
+      "total_time_s": 68.76971070003492,
+      "ms_per_word": 137.53942140006984,
+      "correct": 425,
+      "accuracy_pct": 85.0,
+      "avg_candidates": 26695.356,
+      "avg_candidates_per_proc": 3336.9195
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 500,
+      "total_time_s": 16.43254340004205,
+      "ms_per_word": 32.8650868000841,
+      "correct": 380,
+      "accuracy_pct": 76.0,
+      "avg_candidates": 25875.686,
+      "avg_candidates_per_proc": 3234.46075
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 500,
+      "total_time_s": 14.393963100013934,
+      "ms_per_word": 28.78792620002787,
+      "correct": 376,
+      "accuracy_pct": 75.2,
+      "avg_candidates": 26695.356,
+      "avg_candidates_per_proc": 3336.9195
+    }
+  ]
+}

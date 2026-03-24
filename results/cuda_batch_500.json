@@ -1,0 +1,83 @@
+{
+  "description": "CUDA Batch Processing benchmark (500 words)",
+  "device": "NVIDIA GeForce RTX 2050",
+  "batch_size": 64,
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "num_words": 500,
+      "batch_size": 64,
+      "total_time_s": 0.3515882999927271,
+      "ms_per_word": 0.7031765999854542,
+      "correct": 380,
+      "accuracy_pct": 76.0
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "num_words": 500,
+      "batch_size": 64,
+      "total_time_s": 0.32887439998739865,
+      "ms_per_word": 0.6577487999747973,
+      "correct": 376,
+      "accuracy_pct": 75.2
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "num_words": 500,
+      "batch_size": 64,
+      "total_time_s": 0.17590420000487939,
+      "ms_per_word": 0.35180840000975877,
+      "correct": 420,
+      "accuracy_pct": 84.0
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "num_words": 500,
+      "batch_size": 64,
+      "total_time_s": 0.1911201000039,
+      "ms_per_word": 0.3822402000078,
+      "correct": 425,
+      "accuracy_pct": 85.0
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "num_words": 500,
+      "batch_size": 64,
+      "total_time_s": 0.11100559997430537,
+      "ms_per_word": 0.22201119994861074,
+      "correct": 380,
+      "accuracy_pct": 76.0
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "num_words": 500,
+      "batch_size": 64,
+      "total_time_s": 0.10576140001649037,
+      "ms_per_word": 0.21152280003298074,
+      "correct": 376,
+      "accuracy_pct": 75.2
+    }
+  ],
+  "per_word_cuda": {
+    "Levenshtein_MK": 2.89,
+    "Levenshtein_EN": 1.5,
+    "Damerau-Levenshtein_MK": 1.94,
+    "Damerau-Levenshtein_EN": 1.81,
+    "Myers Bit-Vector_MK": 1.41,
+    "Myers Bit-Vector_EN": 1.2
+  },
+  "c_baseline": {
+    "Levenshtein_MK": 6.49,
+    "Levenshtein_EN": 6.59,
+    "Damerau-Levenshtein_MK": 9.1,
+    "Damerau-Levenshtein_EN": 8.7,
+    "Myers Bit-Vector_MK": 3.67,
+    "Myers Bit-Vector_EN": 3.89
+  }
+}

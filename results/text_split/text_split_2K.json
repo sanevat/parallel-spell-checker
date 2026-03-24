@@ -1,0 +1,317 @@
+{
+  "description": "TEXT-SPLIT benchmark for 2K words",
+  "text_split": {
+    "4": [
+      {
+        "algorithm": "Levenshtein",
+        "language": "MK",
+        "num_procs": 4,
+        "misspelled": 2000,
+        "total_time_s": 169.17143119999673,
+        "ms_per_word": 84.58571559999837,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 500.0
+      },
+      {
+        "algorithm": "Levenshtein",
+        "language": "EN",
+        "num_procs": 4,
+        "misspelled": 2000,
+        "total_time_s": 165.35713310001302,
+        "ms_per_word": 82.67856655000651,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 500.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "MK",
+        "num_procs": 4,
+        "misspelled": 2000,
+        "total_time_s": 244.68247489997884,
+        "ms_per_word": 122.34123744998942,
+        "correct": 1718,
+        "accuracy_pct": 85.9,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 500.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "EN",
+        "num_procs": 4,
+        "misspelled": 2000,
+        "total_time_s": 238.26831539999694,
+        "ms_per_word": 119.13415769999847,
+        "correct": 1705,
+        "accuracy_pct": 85.25,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 500.0
+      },
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "MK",
+        "num_procs": 4,
+        "misspelled": 2000,
+        "total_time_s": 46.55480680000619,
+        "ms_per_word": 23.277403400003095,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 500.0
+      },
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "EN",
+        "num_procs": 4,
+        "misspelled": 2000,
+        "total_time_s": 43.241996600001585,
+        "ms_per_word": 21.620998300000792,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 500.0
+      }
+    ],
+    "2": [
+      {
+        "algorithm": "Levenshtein",
+        "language": "MK",
+        "num_procs": 2,
+        "misspelled": 2000,
+        "total_time_s": 311.11504770000465,
+        "ms_per_word": 155.55752385000233,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 1000.0
+      },
+      {
+        "algorithm": "Levenshtein",
+        "language": "EN",
+        "num_procs": 2,
+        "misspelled": 2000,
+        "total_time_s": 283.37646040000254,
+        "ms_per_word": 141.68823020000127,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 1000.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "MK",
+        "num_procs": 2,
+        "misspelled": 2000,
+        "total_time_s": 467.2368894999963,
+        "ms_per_word": 233.61844474999816,
+        "correct": 1718,
+        "accuracy_pct": 85.9,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 1000.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "EN",
+        "num_procs": 2,
+        "misspelled": 2000,
+        "total_time_s": 432.9752080999897,
+        "ms_per_word": 216.48760404999484,
+        "correct": 1705,
+        "accuracy_pct": 85.25,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 1000.0
+      },
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "MK",
+        "num_procs": 2,
+        "misspelled": 2000,
+        "total_time_s": 92.1278377000126,
+        "ms_per_word": 46.0639188500063,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 1000.0
+      },
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "EN",
+        "num_procs": 2,
+        "misspelled": 2000,
+        "total_time_s": 74.82358960001147,
+        "ms_per_word": 37.41179480000574,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 1000.0
+      }
+    ],
+    "8": [
+      {
+        "algorithm": "Levenshtein",
+        "language": "MK",
+        "num_procs": 8,
+        "misspelled": 2000,
+        "total_time_s": 127.9916337999748,
+        "ms_per_word": 63.9958168999874,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 250.0
+      },
+      {
+        "algorithm": "Levenshtein",
+        "language": "EN",
+        "num_procs": 8,
+        "misspelled": 2000,
+        "total_time_s": 118.46805759999552,
+        "ms_per_word": 59.23402879999776,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 250.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "MK",
+        "num_procs": 8,
+        "misspelled": 2000,
+        "total_time_s": 187.8966831000289,
+        "ms_per_word": 93.94834155001445,
+        "correct": 1718,
+        "accuracy_pct": 85.9,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 250.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "EN",
+        "num_procs": 8,
+        "misspelled": 2000,
+        "total_time_s": 171.585760499991,
+        "ms_per_word": 85.7928802499955,
+        "correct": 1705,
+        "accuracy_pct": 85.25,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 250.0
+      },
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "MK",
+        "num_procs": 8,
+        "misspelled": 2000,
+        "total_time_s": 38.41753039998002,
+        "ms_per_word": 19.20876519999001,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 250.0
+      },
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "EN",
+        "num_procs": 8,
+        "misspelled": 2000,
+        "total_time_s": 32.37499100001878,
+        "ms_per_word": 16.18749550000939,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 250.0
+      }
+    ],
+    "1": [
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "MK",
+        "num_procs": 1,
+        "misspelled": 2000,
+        "total_time_s": 194.21593050000956,
+        "ms_per_word": 97.10796525000478,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 2000.0
+      },
+      {
+        "algorithm": "Myers Bit-Vector",
+        "language": "EN",
+        "num_procs": 1,
+        "misspelled": 2000,
+        "total_time_s": 161.7592016000126,
+        "ms_per_word": 80.8796008000063,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 2000.0
+      },
+      {
+        "algorithm": "Levenshtein",
+        "language": "MK",
+        "num_procs": 1,
+        "misspelled": 2000,
+        "total_time_s": 607.7436075000151,
+        "ms_per_word": 303.87180375000753,
+        "correct": 1579,
+        "accuracy_pct": 78.95,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 2000.0
+      },
+      {
+        "algorithm": "Levenshtein",
+        "language": "EN",
+        "num_procs": 1,
+        "misspelled": 2000,
+        "total_time_s": 561.0439091000007,
+        "ms_per_word": 280.5219545500004,
+        "correct": 1580,
+        "accuracy_pct": 79.0,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 2000.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "MK",
+        "num_procs": 1,
+        "misspelled": 2000,
+        "total_time_s": 913.0697174000088,
+        "ms_per_word": 456.5348587000044,
+        "correct": 1718,
+        "accuracy_pct": 85.9,
+        "avg_candidates": 24869.439,
+        "words_per_proc": 2000.0
+      },
+      {
+        "algorithm": "Damerau-Levenshtein",
+        "language": "EN",
+        "num_procs": 1,
+        "misspelled": 2000,
+        "total_time_s": 843.8781959000044,
+        "ms_per_word": 421.9390979500022,
+        "correct": 1705,
+        "accuracy_pct": 85.25,
+        "avg_candidates": 25092.465,
+        "words_per_proc": 2000.0
+      }
+    ]
+  },
+  "sequential_baseline": {
+    "Levenshtein_MK": 438.1,
+    "Levenshtein_EN": 322.2,
+    "Damerau-Levenshtein_MK": 478.9,
+    "Damerau-Levenshtein_EN": 460.0,
+    "Myers Bit-Vector_MK": 135.4,
+    "Myers Bit-Vector_EN": 120.2
+  },
+  "dict_split_8": {
+    "Levenshtein_MK": 79.5,
+    "Levenshtein_EN": 60.9,
+    "Damerau-Levenshtein_MK": 88.6,
+    "Damerau-Levenshtein_EN": 86.9,
+    "Myers Bit-Vector_MK": 27.7,
+    "Myers Bit-Vector_EN": 24.1
+  }
+}

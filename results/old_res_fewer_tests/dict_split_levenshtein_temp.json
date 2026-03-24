@@ -1,0 +1,29 @@
+{
+  "num_procs": 8,
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 250,
+      "total_time_s": 18.206612900074106,
+      "ms_per_word": 72.82645160029642,
+      "correct": 198,
+      "accuracy_pct": 79.2,
+      "avg_candidates": 26026.112,
+      "candidates_per_proc": 3253.264
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 250,
+      "total_time_s": 17.140502600756008,
+      "ms_per_word": 68.56201040302403,
+      "correct": 171,
+      "accuracy_pct": 68.4,
+      "avg_candidates": 25875.836,
+      "candidates_per_proc": 3234.4795
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "description": "C Baseline (Numba JIT) benchmark (500 words)",
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "num_words": 500,
+      "total_time_s": 3.2467058998008724,
+      "ms_per_word": 6.493411799601745,
+      "correct": 380,
+      "accuracy_pct": 76.0
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "num_words": 500,
+      "total_time_s": 3.2929940999893006,
+      "ms_per_word": 6.585988199978601,
+      "correct": 376,
+      "accuracy_pct": 75.2
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "num_words": 500,
+      "total_time_s": 4.550304099931964,
+      "ms_per_word": 9.100608199863927,
+      "correct": 420,
+      "accuracy_pct": 84.0
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "num_words": 500,
+      "total_time_s": 4.35034029999224,
+      "ms_per_word": 8.70068059998448,
+      "correct": 425,
+      "accuracy_pct": 85.0
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "num_words": 500,
+      "total_time_s": 1.8363716001622379,
+      "ms_per_word": 3.6727432003244758,
+      "correct": 380,
+      "accuracy_pct": 76.0
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "num_words": 500,
+      "total_time_s": 1.9433569999673637,
+      "ms_per_word": 3.8867139999347273,
+      "correct": 376,
+      "accuracy_pct": 75.2
+    }
+  ],
+  "python_baseline": {
+    "Levenshtein_MK": 351.7,
+    "Levenshtein_EN": 319.9,
+    "Damerau-Levenshtein_MK": 491.5,
+    "Damerau-Levenshtein_EN": 459.2,
+    "Myers Bit-Vector_MK": 94.9,
+    "Myers Bit-Vector_EN": 82.1
+  },
+  "cuda_baseline": {
+    "Levenshtein_MK": 2.89,
+    "Levenshtein_EN": 1.5,
+    "Damerau-Levenshtein_MK": 1.94,
+    "Damerau-Levenshtein_EN": 1.81,
+    "Myers Bit-Vector_MK": 1.41,
+    "Myers Bit-Vector_EN": 1.2
+  }
+}

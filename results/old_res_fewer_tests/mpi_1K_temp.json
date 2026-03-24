@@ -1,0 +1,77 @@
+{
+  "num_procs": 8,
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 1000,
+      "total_time_s": 81.48165199995128,
+      "ms_per_word": 81.48165199995128,
+      "correct": 778,
+      "accuracy_pct": 77.8,
+      "avg_candidates": 25875.093,
+      "avg_candidates_per_proc": 3234.386625
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 1000,
+      "total_time_s": 81.37142020005558,
+      "ms_per_word": 81.37142020005558,
+      "correct": 791,
+      "accuracy_pct": 79.10000000000001,
+      "avg_candidates": 26497.4,
+      "avg_candidates_per_proc": 3312.175
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 1000,
+      "total_time_s": 117.50129879989981,
+      "ms_per_word": 117.50129879989981,
+      "correct": 854,
+      "accuracy_pct": 85.39999999999999,
+      "avg_candidates": 25875.093,
+      "avg_candidates_per_proc": 3234.386625
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 1000,
+      "total_time_s": 109.22735059996921,
+      "ms_per_word": 109.22735059996921,
+      "correct": 859,
+      "accuracy_pct": 85.9,
+      "avg_candidates": 26497.4,
+      "avg_candidates_per_proc": 3312.175
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 1000,
+      "total_time_s": 26.58825569999317,
+      "ms_per_word": 26.58825569999317,
+      "correct": 778,
+      "accuracy_pct": 77.8,
+      "avg_candidates": 25875.093,
+      "avg_candidates_per_proc": 3234.386625
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 1000,
+      "total_time_s": 22.792653599921323,
+      "ms_per_word": 22.792653599921323,
+      "correct": 791,
+      "accuracy_pct": 79.10000000000001,
+      "avg_candidates": 26497.4,
+      "avg_candidates_per_proc": 3312.175
+    }
+  ]
+}

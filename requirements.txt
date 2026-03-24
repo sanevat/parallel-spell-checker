@@ -1,0 +1,17 @@
+# Core dependencies for spell checker
+# Install with: pip install -r requirements.txt
+
+# Data preparation
+datasets>=2.14.0       # HuggingFace datasets for Wikipedia
+nltk>=3.8              # NLTK for English corpora
+
+# Parallel processing (Step 3)
+mpi4py>=3.1.0          # MPI parallelization
+numba>=0.57.0          # CUDA via Numba
+# pycuda>=2022.1       # Alternative CUDA (optional)
+
+# Testing and benchmarking
+# pytest>=7.0.0        # Optional: for pytest runner
+
+# Note: CUDA requires appropriate NVIDIA drivers and toolkit
+# MPI requires an MPI implementation (OpenMPI, MPICH, MS-MPI)

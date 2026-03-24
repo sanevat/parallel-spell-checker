@@ -1,0 +1,30 @@
+{
+  "num_procs": 8,
+  "dataset_size": "5000",
+  "results": [
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "num_procs": 8,
+      "misspelled": 4999,
+      "total_time_s": 707.9624109019642,
+      "ms_per_word": 141.62080634166117,
+      "correct": 4354,
+      "accuracy_pct": 87.09741948389677,
+      "avg_candidates": 26321.657331466293,
+      "candidates_per_proc": 3290.2071664332866
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "num_procs": 8,
+      "misspelled": 4999,
+      "total_time_s": 631.935523999331,
+      "ms_per_word": 126.41238727732168,
+      "correct": 4337,
+      "accuracy_pct": 86.75735147029407,
+      "avg_candidates": 26372.92398479696,
+      "candidates_per_proc": 3296.61549809962
+    }
+  ]
+}

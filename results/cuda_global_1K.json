@@ -1,0 +1,60 @@
+{
+  "description": "CUDA Global Memory benchmark (1000 words)",
+  "device": "NVIDIA GeForce RTX 2050",
+  "results": [
+    {
+      "algorithm": "Levenshtein",
+      "language": "MK",
+      "num_words": 1000,
+      "total_time_s": 2.208495800063247,
+      "ms_per_word": 2.208495800063247,
+      "correct": 778,
+      "accuracy_pct": 77.8
+    },
+    {
+      "algorithm": "Levenshtein",
+      "language": "EN",
+      "num_words": 1000,
+      "total_time_s": 2.183469900279306,
+      "ms_per_word": 2.183469900279306,
+      "correct": 791,
+      "accuracy_pct": 79.10000000000001
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "MK",
+      "num_words": 1000,
+      "total_time_s": 2.3014351001329487,
+      "ms_per_word": 2.3014351001329487,
+      "correct": 854,
+      "accuracy_pct": 85.39999999999999
+    },
+    {
+      "algorithm": "Damerau-Levenshtein",
+      "language": "EN",
+      "num_words": 1000,
+      "total_time_s": 2.432191699757823,
+      "ms_per_word": 2.432191699757823,
+      "correct": 859,
+      "accuracy_pct": 85.9
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "MK",
+      "num_words": 1000,
+      "total_time_s": 1.7063931002339814,
+      "ms_per_word": 1.7063931002339814,
+      "correct": 778,
+      "accuracy_pct": 77.8
+    },
+    {
+      "algorithm": "Myers Bit-Vector",
+      "language": "EN",
+      "num_words": 1000,
+      "total_time_s": 1.7660868001257768,
+      "ms_per_word": 1.7660868001257768,
+      "correct": 791,
+      "accuracy_pct": 79.10000000000001
+    }
+  ]
+}
