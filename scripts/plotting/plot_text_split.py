@@ -35,7 +35,7 @@ file_info = [
 ]
 
 # Data structure: {num_procs: {language: [times for each word count]}}
-data = {2: {'MK': [], 'EN': []}, 4: {'MK': [], 'EN': []}, 8: {'MK': [], 'EN': []}}
+data = {2: {'MK': [], 'EN': [], 'TR': []}, 4: {'MK': [], 'EN': [], 'TR': []}, 8: {'MK': [], 'EN': [], 'TR': []}}
 word_counts = []
 
 for file_path, num_words in file_info:
@@ -55,6 +55,30 @@ for file_path, num_words in file_info:
                     else:
                         time_s = entry['ms_per_word'] * num_words / 1000
                     data[int(num_procs)][lang].append(time_s)
+
+# Load Turkish data from separate results file
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
+tr_results_path = os.path.join(script_dir, 'results', 'text_split', 'tr_myers_best_results.json')
+if os.path.exists(tr_results_path):
+    with open(tr_results_path, 'r') as f:
+        tr_results = json.load(f)
+
+    # Map word counts to expected values
+    word_count_map = {250: 250, 500: 500, 1000: 1000, 1500: 1500, 2000: 2000, 2499: 2500, 2500: 2500, 3500: 3500, 4998: 5000, 5000: 5000}
+
+    for entry in tr_results.get('results', []):
+        if entry['algorithm'] in ['Myers-BitVector', 'Myers Bit-Vector']:
+            num_procs = entry['num_procs']
+            if num_procs in [2, 4, 8]:
+                misspelled = entry['misspelled']
+                mapped_words = word_count_map.get(misspelled, misspelled)
+                if mapped_words in word_counts:
+                    idx = word_counts.index(mapped_words)
+                    while len(data[num_procs]['TR']) < idx:
+                        data[num_procs]['TR'].append(None)
+                    if len(data[num_procs]['TR']) == idx:
+                        data[num_procs]['TR'].append(entry['total_time_s'])
 
 # Create the plot
 fig, ax = plt.subplots(figsize=(8, 5.5))
@@ -90,6 +114,20 @@ for num_procs in [2, 4, 8]:
                markeredgewidth=1.5,
                label=f'{num_procs} Processes (EN)')
 
+# Plot TR (dotted lines)
+for num_procs in [2, 4, 8]:
+    times = data[num_procs]['TR']
+    if len(times) == len(word_counts) and all(t is not None for t in times):
+        ax.plot(word_counts, times,
+               color=colors[num_procs],
+               linestyle=':',
+               marker=markers_mk[num_procs],
+               markerfacecolor=colors[num_procs],
+               markeredgecolor='black',
+               markeredgewidth=0.5,
+               markersize=5,
+               label=f'{num_procs} Processes (TR)')
+
 # Configure the plot
 ax.set_xlabel('Number of Words')
 ax.set_ylabel('Time (seconds)')
@@ -110,6 +148,9 @@ legend_elements = [
     Line2D([0], [0], color='black', linestyle='--', marker='o',
            markerfacecolor='white', markeredgecolor='black', markeredgewidth=1.5,
            label='EN (dashed, hollow)'),
+    Line2D([0], [0], color='black', linestyle=':', marker='o',
+           markerfacecolor='gray', markeredgecolor='black', markeredgewidth=0.5,
+           markersize=5, label='TR (dotted, filled)'),
     Line2D([0], [0], color='none', label=''),  # spacer
     # Process count entries
     Line2D([0], [0], color=colors[2], linestyle='-', marker='o',
